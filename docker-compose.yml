@@ -1,6 +1,7 @@
 services:
   htmldiff-app:
     build: .
+    image: localhost/htmldiff-app
     container_name: htmldiff-app
     ports:
       - "8080:8080"
