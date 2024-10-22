@@ -31,4 +31,4 @@ It shows both the original and revised HTML for easy comparison.
    # or 
    # podman-compose up --build
     ```
-   Access at http://localho[HELP.md](HELP.md)st:8080.
+   Access at http://localhost:8080.
