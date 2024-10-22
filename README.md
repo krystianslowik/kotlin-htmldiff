@@ -27,7 +27,8 @@ It shows both the original and revised HTML for easy comparison.
 
 4. OR Run with Docker:
    ```
-   docker-compose build
-   docker-compose up
+   docker-compose up --build
+   # or 
+   # podman-compose up --build
     ```
-   Access at http://localhost:8080.
+   Access at http://localho[HELP.md](HELP.md)st:8080.
