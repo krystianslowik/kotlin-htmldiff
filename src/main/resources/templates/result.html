@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Diff Result</title>
+    <style>
+        /* Styling for inserted and deleted elements */
+        ins { background-color: #a6f3a6; text-decoration: none; }
+        del { background-color: #f3a6a6; text-decoration: line-through; }
+
+        /* CSS for two-column layout */
+        .container {
+            display: flex;
+        }
+        .column {
+            flex: 50%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            height: 100vh;
+            overflow-y: scroll;
+        }
+        .column h2 {
+            text-align: center;
+        }
+
+        /* Ensure preformatted content */
+        pre {
+            white-space: pre-wrap; /* Ensures line breaks and whitespace are preserved */
+            word-wrap: break-word; /* Avoids overflow for long lines */
+            font-family: monospace; /* Optional: Uses a monospace font for better readability */
+        }
+    </style>
+</head>
+<body>
+<h1>HTML Diff Result</h1>
+<div class="container">
+    <div class="column">
+        <h2>Original</h2>
+        <pre th:utext="${originalDiff}"></pre> <!-- Preserve formatting with <pre> -->
+    </div>
+    <div class="column">
+        <h2>Revised</h2>
+        <pre th:utext="${revisedDiff}"></pre> <!-- Preserve formatting with <pre> -->
+    </div>
+</div>
+<br>
+<a href="/">Back to Compare</a>
+</body>
+</html>

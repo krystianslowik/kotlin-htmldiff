@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Diff Tool</title>
+</head>
+<body>
+<h1>HTML Diff Tool</h1>
+<form action="/compare" method="post">
+    <label for="html1">HTML Input 1:</label><br>
+    <textarea id="html1" name="html1" rows="10" cols="80"></textarea><br><br>
+
+    <label for="html2">HTML Input 2:</label><br>
+    <textarea id="html2" name="html2" rows="10" cols="80"></textarea><br><br>
+
+    <button type="submit">Compare</button>
+</form>
+</body>
+</html>
