@@ -1,40 +1,65 @@
-HELP.md
+# macOS
+*DS_Store*
+.AppleDouble
+.LSOverride
+
+# macOS resource forks are stored in Extended Attributes, which won't be copied to Git.
+Icon
+._*
+
+# Thumbnails
+._.DS_Store
+.DS_Store?
+
+# Temporary files created by macOS applications
+.Spotlight-V100
+.Trashes
+.Trash-*
+
+# macOS Disk images
+*.dmg
+
+# Gradle
 .gradle
-build/
+/build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
-!**/src/test/**/build/
 
-### STS ###
-.apt_generated
+# Eclipse (works with ADT)
 .classpath
-.factorypath
 .project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+.settings/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+# IntelliJ IDEA
+.idea/
 *.iml
 *.ipr
+*.iws
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nblibraries.properties
 
-### VS Code ###
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Windows thumbnail cache
+Thumbs.db
+
+# VS Code
 .vscode/
 
-### Kotlin ###
-.kotlin
+# Java
+*.class
+*.jar
+*.war
+*.ear
